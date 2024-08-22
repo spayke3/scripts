@@ -1,11 +1,8 @@
 #!/bin/bash
-source build/envsetup.sh
 
-#source scripts/fixes.sh
+repo init -u https://github.com/LineageOS/android.git -b lineage-21.0 --git-lfs
 
-#lunch lineage_h870-userdebug
-#m bacon
-#lunch lineage_us997-userdebug
-#m bacon
-lunch lineage_h872-userdebug
-m bacon
+git clone https://github.com/AndyCGYan/lineage_build_unified lineage_build_unified -b lineage-21-td
+git clone https://github.com/AndyCGYan/lineage_patches_unified lineage_patches_unified -b lineage-21-td
+
+bash lineage_build_unified/buildbot_unified.sh treble A64VN

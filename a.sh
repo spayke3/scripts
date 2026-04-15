@@ -16,18 +16,10 @@ git lfs install
 git lfs track "*.zip"
 git add .gitattributes
 git commit -m "Enable LFS"
-cd ..
+git push origin main
+
 curl -L "https://s10.ooo/v2/IxJCDiMnLjE1MAc1LxsgKTU2Hjo4MR4lFzssIDs2ByAzMUEgOzEUQDMQMCMBOyw/EkAsHxcWLykDMC4WMyUhHB4vICAuFwYbMgcIOS4HIAouJSM/NDEfJjQnPh00FwcFIQseAhIHAgI7JSACDwchPR44LDwyQC8sFwgCEhc2GkAjCDskOwgwHyMbBkIeCzwGHgM8FCMkNDEjCxVACTghHzInDQYuFx8rIwAvJCFAMxE8EQY5NRshDjURPho0ES8kNRYhOR44LwsJEQc5NBsjKyEAPg4hAAYsLjgeLDQRHg4yJTMsMiUNKzwAPh8mGzk5FyUzDTUHQQEuByADISxBIwMnOUANQAokMzYCICMXPjkDFzA1CS8pDTsxHhwzQAZCOzEHHjMsNCsNMT4eODAeHgk7CDAjFiI5ODEeBQ0wPiAeAyI5IwcCFjskBxY7NjQGOAAhKTw/FD01OCBCJhs7JA0kHj8SFiA5LgMsADM7HwYyOyE5DwspFDQIHhoPOzkUMwBBDSMXPjgjOAZCIwM0QB4LIz8BFiIwIyITEw==" -o file1.zip
-
-
-# Copy your ZIP file back
-cp file1.zip test2-lfs
-
-# Add and commit via LFS
-cd test2-lfs
-
 git add .
 git commit -m "Add ROM zip via LFS"
-
 # Push
 git push origin main
